@@ -58,7 +58,37 @@ export const testimonials = [
     text: "O atendimento online é muito confortável e o Fabio cria um ambiente de confiança desde a primeira sessão.",
     role: "Paciente · 4 meses de acompanhamento",
   },
+  {
+    name: "Patrícia R.",
+    text: "Aprendi a respirar, pausar e responder em vez de reagir. As crises de ansiedade reduziram drasticamente em poucas semanas.",
+    role: "Paciente · 5 meses de acompanhamento",
+  },
+  {
+    name: "André F.",
+    text: "Cheguei sem esperança e saí com um caminho concreto. O Fabio me ajudou a recuperar foco no trabalho e qualidade no sono.",
+    role: "Paciente · 7 meses de acompanhamento",
+  },
 ];
+
+// Bloco "Confiança / Sobre" — biografia completa abaixo do contador
+export const trustBio = {
+  label: "CONFIANÇA",
+  count: "+1200 atendimentos realizados!",
+  name: "Fabio Moura",
+  // Imagem opcional — deixe vazio para esconder
+  photoUrl: "",
+  paragraphs: [
+    "Fabio Moura é Psicólogo Clínico especializado em Terapia Cognitivo-Comportamental, com foco em descobrir e resolver as causas raízes da insegurança e ansiedade, com mais de 1.200 atendimentos realizados de forma 100% online pelo Brasil e pelo mundo.",
+    "Com uma trajetória marcada pela investigação profunda da mente humana, Fabio desenvolveu uma metodologia estratégica que utiliza uma combinação de TCC e técnicas práticas para identificar, em poucas sessões, os bloqueios que paralisam a capacidade de pessoas altamente competentes. Sua abordagem é reconhecida por ir direto à raiz do problema, transformando insegurança e ansiedade em poder de decisão.",
+    "A autoridade de Fabio não vem apenas dos livros, mas de sua própria transformação. Após anos perdendo oportunidades e vivendo sob o peso da autocobrança e do medo do julgamento, ele utilizou a TCC para reprogramar a própria mente, alcançando resultados expressivos em sua vida profissional, financeira e nas relações. Hoje, dedica sua expertise técnica e experiência clínica para garantir que a competência de seus pacientes finalmente se traduza em resultados reais, eliminando o ciclo de insegurança que trava o sucesso.",
+  ],
+  closingTop: "Tudo pensado para a sua total comodidade, privacidade e segurança:",
+  closingBottom: "atendimento online sem sair de casa!",
+  ctaText: "Quero agendar agora",
+  ctaNote: "Agendamento em até 24h",
+  ctaItalic:
+    "Se você chegou até aqui, não foi por acaso. Pode ter sido o sinal que você estava esperando.",
+};
 
 export const plans = [
   {
