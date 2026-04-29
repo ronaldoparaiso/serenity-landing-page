@@ -1,14 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { siteConfig } from "@/config/site";
 import { ShieldCheck, Video } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 export const Hero = () => {
   return (
     <section
       id="top"
-      className="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-gradient-hero"
+      className="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-gradient-hero"
     >
-      {/* Decorative organic shapes */}
       <div
         aria-hidden
         className="pointer-events-none absolute -top-32 -right-32 w-[480px] h-[480px] rounded-full bg-secondary/10 blur-3xl"
@@ -36,26 +34,6 @@ export const Hero = () => {
             Um espaço acolhedor e seguro para você compreender suas emoções,
             desenvolver ferramentas práticas e retomar o bem-estar no seu dia a dia.
           </p>
-
-          <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-secondary rounded-full px-8 h-14 text-base shadow-soft transition-all"
-            >
-              <a href={siteConfig.checkoutUrl} target="_blank" rel="noopener noreferrer">
-                Quero agendar minha consulta
-              </a>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="rounded-full px-8 h-14 text-base border-primary/20 text-primary hover:bg-primary/5"
-            >
-              <a href="#video">Conhecer o trabalho</a>
-            </Button>
-          </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2">

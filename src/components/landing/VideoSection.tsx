@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
 export const VideoSection = () => {
@@ -30,6 +31,18 @@ export const VideoSection = () => {
               />
             </div>
           </div>
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <Button
+            asChild
+            size="lg"
+            className="bg-gradient-gold text-primary hover:opacity-90 hover:shadow-gold transition-all rounded-full px-10 h-14 text-base font-semibold"
+          >
+            <a href={siteConfig.checkoutUrl} target="_blank" rel="noopener noreferrer">
+              Agendar minha sessão agora
+            </a>
+          </Button>
         </div>
       </div>
     </section>

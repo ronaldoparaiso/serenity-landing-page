@@ -25,6 +25,18 @@ export const siteConfig = {
   linkedin: "https://linkedin.com/in/seuusuario",
 };
 
+export const sessionOffer = {
+  bullets: [
+    "60 Minutos",
+    "Sigilo Absoluto",
+    "Zero Julgamentos",
+    "Chamada de Vídeo Online",
+    "Sem Precisar sair de casa",
+  ],
+  oldPrice: "R$ 299,00",
+  price: "R$ 147,00",
+};
+
 export const testimonials = [
   {
     name: "Mariana S.",
