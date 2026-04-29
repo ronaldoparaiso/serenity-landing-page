@@ -1,8 +1,8 @@
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { VideoSection } from "@/components/landing/VideoSection";
-import { AboutCTA } from "@/components/landing/AboutCTA";
 import { Testimonials } from "@/components/landing/Testimonials";
+import { SessionOffer } from "@/components/landing/SessionOffer";
 import { Benefits } from "@/components/landing/Benefits";
 import { Pricing } from "@/components/landing/Pricing";
 import { Footer } from "@/components/landing/Footer";
@@ -14,8 +14,8 @@ const Index = () => {
       <Header />
       <Hero />
       <VideoSection />
-      <AboutCTA />
       <Testimonials />
+      <SessionOffer />
       <Benefits />
       <Pricing />
       <Footer />
