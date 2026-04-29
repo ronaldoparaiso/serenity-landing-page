@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { siteConfig, sessionOffer } from "@/config/site";
+import { siteConfig, sessionOffer, trustBio } from "@/config/site";
 
 const cards = [
   {
@@ -110,13 +110,66 @@ export const SessionOffer = () => {
           </p>
         </div>
 
-        {/* Confiança */}
+        {/* Confiança + Biografia */}
         <div className="mt-20 text-center max-w-3xl mx-auto">
           <p className="font-serif text-2xl md:text-3xl tracking-[0.15em] text-primary uppercase">
-            Confiança
+            {trustBio.label}
           </p>
           <p className="mt-3 font-serif italic text-xl md:text-2xl text-secondary">
-            +1200 atendimentos realizados!
+            {trustBio.count}
+          </p>
+        </div>
+
+        <div className="mt-14 max-w-5xl mx-auto">
+          <h3 className="font-serif text-3xl md:text-5xl text-primary text-center md:text-left mb-8">
+            {trustBio.name}
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-10 items-start">
+            {trustBio.photoUrl ? (
+              <div className="rounded-2xl overflow-hidden shadow-soft border border-border/60">
+                <img
+                  src={trustBio.photoUrl}
+                  alt={trustBio.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ) : (
+              <div className="rounded-2xl bg-gradient-hero border border-border/60 aspect-[4/5] flex items-center justify-center">
+                <span className="font-serif text-6xl text-primary/30">
+                  {trustBio.name
+                    .split(" ")
+                    .map((n) => n[0])
+                    .join("")}
+                </span>
+              </div>
+            )}
+
+            <div className="space-y-5 text-foreground/80 leading-relaxed text-[15px] md:text-base">
+              {trustBio.paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16 max-w-2xl mx-auto text-center">
+          <p className="text-muted-foreground">{trustBio.closingTop}</p>
+          <p className="text-muted-foreground">{trustBio.closingBottom}</p>
+
+          <Button
+            asChild
+            size="lg"
+            className="mt-8 bg-gradient-deep text-primary-foreground hover:opacity-90 transition-all rounded-2xl px-12 h-14 text-base font-semibold uppercase tracking-wider"
+          >
+            <a href={siteConfig.checkoutUrl} target="_blank" rel="noopener noreferrer">
+              {trustBio.ctaText}
+            </a>
+          </Button>
+
+          <p className="mt-4 text-sm text-muted-foreground">{trustBio.ctaNote}</p>
+          <p className="mt-3 text-xs text-foreground/70 italic max-w-md mx-auto">
+            {trustBio.ctaItalic}
           </p>
         </div>
       </div>
