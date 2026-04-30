@@ -1,11 +1,8 @@
-import { ShieldCheck, Video } from "lucide-react";
-import { siteConfig } from "@/config/site";
-
 export const Hero = () => {
   return (
     <section
       id="top"
-      className="relative pt-32 pb-8 md:pt-36 md:pb-10 overflow-hidden bg-gradient-hero"
+      className="relative pt-32 pb-4 md:pt-36 md:pb-6 overflow-hidden bg-gradient-hero"
     >
       <div
         aria-hidden
@@ -28,25 +25,9 @@ export const Hero = () => {
             Encontre equilíbrio emocional e{" "}
             <span className="italic text-gradient-gold">supere a ansiedade</span>
           </h1>
-
-          <p className="mt-7 text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Atendimento psicológico online com Terapia Cognitivo-Comportamental.
-            Um espaço acolhedor e seguro para você compreender suas emoções,
-            desenvolver ferramentas práticas e retomar o bem-estar no seu dia a dia.
-          </p>
-
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
-            <span className="inline-flex items-center gap-2">
-              <Video className="h-4 w-4 text-secondary" />
-              {siteConfig.city}
-            </span>
-            <span className="inline-flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-secondary" />
-              {siteConfig.crp} · Sigilo profissional
-            </span>
-          </div>
         </div>
       </div>
     </section>
   );
 };
+
