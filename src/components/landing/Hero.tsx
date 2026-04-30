@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section
       id="top"
-      className="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-gradient-hero"
+      className="relative pt-32 pb-8 md:pt-36 md:pb-10 overflow-hidden bg-gradient-hero"
     >
       <div
         aria-hidden
@@ -24,7 +24,7 @@ export const Hero = () => {
             <span className="h-px w-8 bg-gold" />
           </span>
 
-          <h1 className="mt-6 font-serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-primary">
+          <h1 className="mt-6 font-serif text-3xl md:text-4xl lg:text-5xl font-semibold leading-[1.1] text-primary">
             Encontre equilíbrio emocional e{" "}
             <span className="italic text-gradient-gold">supere a ansiedade</span>
           </h1>
